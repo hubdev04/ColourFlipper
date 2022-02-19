@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 62.5%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav
+        {
+            
+            width: 100vw;
+            
+            height: 10rem;
+        }
+        .nav-center{
+            display: flex;
+            width: 100%;
+            height: 10rem;
+            background-color: yellow;
+            
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);background: #fff;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        ul {
+  list-style-type: none;
+  display: flex;
+}
+ul li{
+    font-size: 2rem;
+    padding: 1rem 1rem;
+}
+a {
+  text-decoration: none;
+  color:hsl(205, 86%, 17%) ;text-transform: capitalize;;
+}
+nav a:hover {
+  color: hsl(205, 78%, 60%);
+}
+h2{
+    font-size: 4.2rem;
+    display: block;
+    background-color: black;
+    color: #fff;
+    border-radius: 2rem;
+    min-height: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    width: 71rem;
+}
+        main{
+                /* position: relative;
+                height: 55rem;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 0 1 auto; */
+                display: grid;
+                place-items: center;
+                min-height: 75vh;
+                width: 100vw;
+
+        }
+        h4{
+            font-size: 2rem;
+            display: inline-block;
+            width: 20rem;
+
+        }
+        .conatiner{
+            position: relative;
+            width: 80rem;
+            height: 50rem;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+           
+            display: flex;
+        }
+        button{
+            margin-top: 5rem;
+            color: white;
+           display: block;
+           background: transparent;
+           cursor: pointer;
+           border: 2px solid #222;
+            border-radius: 1rem;
+            font-size: 2rem;
+  padding: 0.75rem 1.25rem;
+        }
+        button:hover{
+            color: #fff;
+  background:#222;
+        }
+        @media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+    </style>
+</head>
+<body >
+    <nav>
+        <div class="nav-center">
+            <h4>COLOR FLIPPER</h4>
+            <ul class="nav-links">
+                <li><a onclick="simple()" >SIMPLE</a></li>
+                <li><a onclick="hex()" >Hex</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="conatiner">
+            <h2>BACKGROUND COLOR <span class="text"></span></h2>
+            <button>Click Me</button>
+        </div>
+    </main>
+    
+    <script src="./new.js"></script>
+</body>
+</html>
